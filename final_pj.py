@@ -27,15 +27,19 @@ class Student:
     # student_age (user input)
     # student_number (user_input)
     # courses_list (List of Course Objects)
-    def __init__(self, name, age, st_num, *courses_list):
+
+    def __init__(self, name=None, age=0, st_num=0, *courses_list):
         self.st_id = str(uuid.uuid4().int)
         self.name = name
         self.age = age
         self.st_num = st_num
         self.courses_list = [courses_list]
 
-
     # TODO 5 define a method to enroll new course to student courses list
+    def enroll_new_course(self, name, mark):
+        new_course = Course(name, mark)
+        Student().courses_list.append(new_course)
+
 
     # method to get_student_details as dict
     def get_student_details(self):
