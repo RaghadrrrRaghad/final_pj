@@ -12,7 +12,7 @@ Delivery Date : 22-6-23
 # course mark (user_input)
 class Course:
     def __init__(self, name, mark):
-        self.course_id = uuid.uuid4().int
+        self.course_id = str(uuid.uuid4().int)
         self.course_name = name
         self.course_mark = mark
 
