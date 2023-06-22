@@ -1,7 +1,7 @@
 """ITF 07 Final Project Attendance System
 # TODO 1 Enter your name and submission date
-Name :
-Delivery Date :
+Name : "Raghad Haniya"
+Delivery Date : 22-6-23
 """
 
 
