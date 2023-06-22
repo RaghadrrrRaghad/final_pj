@@ -1,3 +1,4 @@
+import uuid
 """ITF 07 Final Project Attendance System
 # TODO 1 Enter your name and submission date
 Name : "Raghad Haniya"
@@ -9,6 +10,11 @@ Delivery Date : 22-6-23
 # course_id (generated using uuid4) ,
 # course name (user_input) and
 # course mark (user_input)
+class Course:
+    def __init__(self, name, mark):
+        self.course_id = uuid.uuid4().int
+        self.course_name = name
+        self.course_mark = mark
 
 
 class Student:
